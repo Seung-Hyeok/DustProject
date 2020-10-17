@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.example.dustproject.MainActivity;
 import com.example.dustproject.R;
 import com.example.dustproject.data.FineDustRepository;
 import com.example.dustproject.data.LocationFineDustRepository;
@@ -45,6 +46,7 @@ public class FineDustFragment extends Fragment implements FineDustContract.View 
             mRepository = new LocationFineDustRepository(lat,lng);
         }else{
             mRepository = new LocationFineDustRepository();
+            ((MainActivity)getActivity()).getLastKnownLocation();
         }
         mPresenter = new FineDustPresenter(mRepository, this);
         mPresenter.loadFineDustData();
@@ -86,7 +88,7 @@ public class FineDustFragment extends Fragment implements FineDustContract.View 
     public void showFineDustResult(FineDust fineDust) {
         mLocationTextView.setText(fineDust.getWeather().getDust().get(0).getStation().getName());
         mTimeTextView.setText(fineDust.getWeather().getDust().get(0).getTimeObservation());
-        mDustTextView.setText(fineDust.getWeather().getDust().get(0).getPm10().getValue() + "㎍/m³," + fineDust.getWeather().getDust().get(0).getPm10().getGrade());
+        mDustTextView.setText(fineDust.getWeather().getDust().get(0).getPm10().getValue() + "㎍/m³  " + fineDust.getWeather().getDust().get(0).getPm10().getGrade());
         if(fineDust.getWeather().getDust().get(0).getPm10().getGrade() == "좋음"){
             mDustTextView.setTextColor(R.color.blue);
         }else if(fineDust.getWeather().getDust().get(0).getPm10().getGrade() == "나쁨"){

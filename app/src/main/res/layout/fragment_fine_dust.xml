@@ -42,7 +42,7 @@
                     android:layout_gravity="center_vertical"
                     android:paddingStart="4dp"
                     android:paddingLeft="4dp"
-                    android:text="관측장소"
+                    android:text="위치요~"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
             </LinearLayout>
@@ -55,6 +55,7 @@
                 android:paddingLeft="24dp"
                 android:paddingTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/blue"
                 tools:text="수원시"
                 android:textStyle="bold"/>
 
@@ -87,7 +88,7 @@
                     android:layout_gravity="center_vertical"
                     android:paddingStart="4dp"
                     android:paddingLeft="4dp"
-                    android:text="관측시간"
+                    android:text="시간이요~"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
             </LinearLayout>
@@ -100,6 +101,7 @@
                 android:paddingLeft="24dp"
                 android:paddingTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/blue"
                 tools:text="수원시"
                 android:textStyle="bold"/>
 
@@ -132,8 +134,9 @@
                     android:layout_gravity="center_vertical"
                     android:paddingStart="4dp"
                     android:paddingLeft="4dp"
-                    android:text="미세먼지"
+                    android:text="미세먼지 ㅠㅠ"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
 
             </LinearLayout>
             <TextView
@@ -145,6 +148,7 @@
                 android:paddingLeft="24dp"
                 android:paddingTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/cardview_dark_background"
                 tools:text="수원시"
                 android:textStyle="bold"/>
 

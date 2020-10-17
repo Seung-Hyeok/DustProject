@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"> // 여기에 이미지를 넣거나 좋은 아이디어 있으면 추가해도 됩니다 여러분
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="원하는 지역의 미세먼지 정보를 확인하세요~!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <EditText
+        android:id="@+id/city_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="도시 입력"
+        android:padding="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ex) 성남시, 서울특별시 등"
+        android:textStyle="italic"/>
+
+
+
+
+</LinearLayout>
