@@ -3,6 +3,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/korea"/>//일단 korea로 이미지를 해봣습니다
+            android:src="@drawable/lion"/>//lion 이미지를 해봣습니다
     </item>
 </layer-list>
